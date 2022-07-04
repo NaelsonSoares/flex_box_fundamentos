@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+.flex-container{
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    background-color: rgb(2, 2, 105);
+    color: white;
+    height:100px;
+    display: flex;
+    align-items: center;
+}
+header h1{
+    padding-left: 50px;
+}
+header .menu{
+    justify-content: space-between;
+    align-items: center;
+}
+header .lista-menu{
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-top: 50px;
+    list-style: none;
+
+}
+div img{
+    display: block;
+    width: 100%;
+}
+footer{
+    background-color: rgb(2, 2, 105);
+    color: white;
+    height: 30px;
+}
+footer p{
+    padding: 5px;
+    margin: auto;
+    
+}
+.apresenta{
+    color: rgb(2, 2, 105);
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    align-items: center;
+}
+.apretxt h1{
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+.apretxt p{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.apretxt a{
+    background-color: rgb(2, 2, 105);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+.apresenta img{
+    max-width: 500px;
+    padding-top: 50px;
+}
+.quemsomos{
+    justify-content: space-between;
+    height: 500px;
+    padding-bottom: 50px;
+    color: rgb(2, 2, 105);
+    align-items: center;
+}
+.quemsomos img{
+    max-width: 700px;
+}
+.quemsomos h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin: auto;
+    display: flex;
+}
+.quemsomos p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.quemsomos h2::before{
+    content: "";
+    height: 40px;
+    margin-right: 5px;
+    width: 5px;
+    background-color: rgb(2, 2, 105);
+    position: relative;
+}
+.somostxt{
+    max-width: 400px;
+}
+.container-servicos{
+    background-color: rgb(2, 2, 105);
+    margin-bottom: 10px;
+}
+#servicos{
+    flex-direction: column;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.servicos-img{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.list-servicos{
+    text-align: center;
+    margin-top: 20px;
+}
+.list-servicos a{
+    background-color: white;
+    text-decoration: none;
+    color: rgb(2, 2, 105);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+.list-servicos p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#servicos h2{
+    margin: 40px;
+}
+#planos{
+    flex-direction: column;
+    color: rgb(2, 2, 105);
+    min-height: 100vh;
+    padding-top: 100px;
+      
+}
+#planos h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin: auto;
+    display: flex;
+}
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.item-planos{
+    flex: 1;
+    border: 4px solid rgb(2, 2, 105);
+    margin-right: 20px;
+    padding: 50px 5px; 
+    text-align: center; 
+}
+.item-planos a{
+    background-color: rgb(2, 2, 105);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;      
+}
+.item-planos ul{
+    list-style: square;
+    padding: 40px 30px;
+    text-align: left;
+}
+.item-planos ul li{
+    padding-bottom: 15px;
+}
+.item-planos h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.item-planos h3::after{
+    content: "";
+    background-color: rgb(2, 2, 105);
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+}
+@media (max-width:490px;) {
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    header h1{
+        width: 100%;
+    }
+    header .menu{
+        width: 100%;
+        flex-direction: column;
+    }
+    header .lista-menu{
+        width: 100%;
+        display: flex;
+    }
+    div img{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        width: 100%;
+    }
+    .apresenta{
+        width: 100%;
+    }
+    .apretxt h1{
+        width: 100%;
+    }
+    .apretxt p{
+        width: 100%; 
+    }
+    .apretxt a{
+        width: 100%;
+    }
+    .apresenta img{
+        width: 100%;
+    }
+    .quemsomos{
+        width: 100%;
+    }
+    .quemsomos img{
+        width: 100%;
+    }
+    .quemsomos h2{
+        width: 100%;
+    }
+    .quemsomos p{
+        width: 100%;
+    }
+    .quemsomos h2::before{
+        width: 100%;
+    }
+    .somostxt{
+        width: 100%;
+    }
+    .container-servicos{
+        width: 100%;
+    }
+    #servicos{
+        width: 100%;
+    }
+    .servicos-img{
+        width: 100%;
+    }
+    .list-servicos{
+        width: 100%;
+    }
+    .list-servicos a{
+        width: 100%;
+    }
+    .list-servicos p{
+        width: 100%;
+    }
+    #servicos h2{
+        width: 100%;
+    }
+    #planos{
+        width: 100%;
+    }
+    #planos h2{
+        width: 100%;
+    }
+    .list-planos{
+        width: 100%;
+    }
+    .item-planos{
+        width: 100%;
+    }
+    .item-planos a{
+        width: 100%;
+    }
+    .item-planos ul{
+        width: 100%;
+    }
+    .item-planos ul li{
+        width: 100%;
+    }
+
+}
