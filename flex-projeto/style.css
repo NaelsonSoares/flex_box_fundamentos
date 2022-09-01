@@ -205,9 +205,19 @@ footer p{
     height: 3px;
     margin-top: 20px;
 }
-@media (max-width:490px;) {
+@media (min-width: 720px;) {
     .flex-container{
         flex-direction: column;
         width: 100%;
     }
+    body{
+        width: 100%;
+    }
+    .menu{
+        width: 100px;
+    }
+    ul li a{
+        font-size: 10px;
+    }
+
 }
